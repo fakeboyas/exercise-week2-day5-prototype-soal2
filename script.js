@@ -1,12 +1,12 @@
 String.prototype.toTitleCase = function () {
-    return this.replace(/\w\S*/g, function (txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    return this.replace(/\w\S*/g, function (add) {
+        return add.charAt(0).toUpperCase() + add.substr(1).toLowerCase();
     });
 };
 
-let test1 = "aku belum sarapan";
+// let test1 = "aku belum sarapan";
 
-console.log(test1.toTitleCase());
+// console.log(test1.toTitleCase());
 
 let btn1 = document.getElementById("btn1");
 
